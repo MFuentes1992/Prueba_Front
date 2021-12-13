@@ -137,7 +137,7 @@ header{
 /* NAV - MENU */
 .app__logo{
     position: relative;
-    width: 152px;
+    width: 15%;
     height: 54px;
     top: 14px;
     left: 70px;
@@ -152,6 +152,11 @@ header{
     color: var(--text-color);
     font-size: 40px;
     text-transform: capitalize;
+}
+
+.navbar {
+    position: relative;
+    width: 70%;
 }
 
 .navbar > ul {
@@ -269,30 +274,365 @@ footer {
 
 .footer__sponsor__title {
     position: relative;
-    left: 166px;
-    width: 376px;
-    top: 40px;
+    left: 13%;
+    width: 377px;
+    top: 0px;
     text-align: left;
     font-size: 26px;
     letter-spacing: 0px;
     color: var(--text-color);
 }
 
+.footer__sponsor__title > p {
+    font-size: 56px;
+    letter-spacing: 0px;
+}
+
 .footer__sponsor {
     position: relative;
-    left: 300px;
-    width: 536px;
+    left: 20%;
+    width: 44%;
     height: 248px;
-    top: -72px;  
+    top: -72px;
+}
+
+.footer__sponsor > img {
+    position: relative;
+    width: 100%;
 }
 
 /* SMALL SCREENS */
-@media  only screen  and (max-width: 1280px) {
-    .navbar > ul {
-        width: 90%;
+ @media  only screen  and (max-width: 1280px) {
+    .navbar > ul  {
+        position: relative;
+        width: 80%;
+    }
+
+    .navbar > ul > li {
+        margin-left: 2%;
     }
 }
 
+@media  only screen  and (max-width: 1100px) {
+    footer {
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        height: 10%;
+        background: transparent linear-gradient(180deg, #C2E3F3 0%, #6AA3C1 100%) 0% 0% no-repeat padding-box;
+        box-shadow: 4px 6px 23px #A9A9A911;
+        display: flex;
+    }
+
+    .footer__sponsor__title {
+        left: 5%;
+        top: -30px;
+    }
+
+    .banner__text_upper{
+        top: 10%;
+    }
+
+    .banner__text_down {
+        top: 30%;
+    }
+
+    .footer__sponsor {
+        position: relative;
+        left: 15%;
+        width: 44%;
+        height: 248px;
+        top: -35px;
+    }
+
+    .footer__sponsor > img {
+        position: relative;
+        width: 100%;
+    }
+
+    /* HEADER */
+    body{
+        position: relative;
+        width: 100vw;
+        height: 1024px;
+        margin: 0px;
+    }
+    header {
+        width: 100vw;
+    }
+    .navbar {
+        display: none;
+    }
+    .resposive__menu {
+        position: relative;
+        top: -40px;
+        width: 90%;
+        height: 85px;
+        margin: auto;
+        margin-bottom: 2px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .menu__container {
+        position: relative;
+        width: 106px;
+        height: 85px;
+        border-radius: 10px;
+        background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+        box-shadow: 0px 5px 9px #8395A766;
+        text-align: center;
+    }
+    .main__container {
+        position: relative;
+        top: -70px;
+    }
+    .menu__icon {
+        position: relative;
+        height: 30px;
+        top: 10px;
+    }
+    .menu__desc {
+        position: relative;
+        top: 20px;
+        font-family: Poppins_Medium;
+        font-size: 13px;
+    }
+    .header__home{
+        position: relative;
+        text-align: right;
+        display: block;
+        left: 73%;
+        top: 24px;
+    }
+    .banner__container {
+        position: relative;
+        width: 100%;
+    }   
+    .banner__container > img {
+        width: 100% !important;
+    }
+    
+    /* SLIDESHOW */
+    .Recipes__slideshow{ 
+        padding-top: 64px;       
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 80%;
+        height: 300px;
+        z-index: 1;    
+        text-align: center;    
+        margin: 0px;
+        display: flex;
+        padding-left: 55px;
+        padding-right: 55px;
+        text-align: center;
+    }
+}
+
+/* @media  only screen  and (max-width: 930px) {
+    footer {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 167px;
+        background: transparent linear-gradient(180deg, #C2E3F3 0%, #6AA3C1 100%) 0% 0% no-repeat padding-box;
+        box-shadow: 4px 6px 23px #A9A9A911;
+        display: flex;
+    }
+
+    .footer__sponsor__title {
+        left: 5%;
+    }
+
+    .footer__sponsor {
+        position: relative;
+        left: 7%;
+        width: 33%;
+        height: 248px;
+        top: -24px;
+    }
+
+    .footer__sponsor > img {
+        position: relative;
+        width: 100%;
+    }
+} */
+
+@media  only screen  and (max-width: 880px) {
+    footer {
+        position: relative;
+        width: 100%;
+        height: 116px;
+        bottom: 5px;
+        background: transparent linear-gradient(180deg, #C2E3F3 0%, #6AA3C1 100%) 0% 0% no-repeat padding-box;
+        box-shadow: 4px 6px 23px #A9A9A911;
+        display: flex;        
+    }
+    .footer__sponsor__title {
+        position: relative;
+        left: 40px;
+        width: 34%;
+        top: 0px;
+        text-align: left;        
+        color: var(--text-color);
+    }
+
+    .footer__sponsor__title > p {
+        font-size: 39px;
+        letter-spacing: 0px;
+    }
+    
+    .footer__sponsor {
+        position: relative;
+        left: 110px;
+        width: 50%;
+        top: -44px;  
+    }
+
+    .footer__sponsor > img {
+        position: relative;
+        width: 100%;
+    }
+
+    .banner__text_upper{
+        top: -15%;
+    }
+
+    .banner__text_down {
+        top: 10%;
+    }
+}
+
+@media  only screen  and (max-width: 780px) {
+    .footer__sponsor__title > p {
+        font-size: 38px;
+        letter-spacing: 0px;
+    }
+    .footer__sponsor {
+        position: relative;
+        left: 100px;;
+        width: 50%;
+        top: -40%;    
+    }    
+    .menu__container {
+        margin-bottom: 5%;
+    }
+
+    .section__divider{
+        height: 20px;
+    }
+
+    .resposive__menu{
+        margin-bottom: 10%;
+    }
+
+    .banner__text_upper {
+        left: 121px;
+    }
+
+    .banner__text_down {
+        left: 121px;
+    }
+}
+
+@media  only screen  and (max-width: 760px) {
+    .footer__sponsor__title > p {
+        font-size: 28px;
+        letter-spacing: 0px;
+    }
+    .footer__sponsor {
+        position: relative;
+        left: 50px;
+        width: 50%;
+        top: -40%;    
+    }  
+    
+    .banner__text_upper{
+        top: -20%;
+        left: 15%;
+    }
+
+    .banner__text_down {
+        top: 5%;
+        left: 15%;
+    }
+}
+
+@media  only screen  and (max-width: 705px) {   
+    .resposive__menu {
+        margin-bottom: 25%;
+    }
+}
+
+@media  only screen  and (max-width: 560px) {
+
+    footer {
+        height: 100px;
+    }
+
+    .footer__sponsor__title > p {
+        font-size: 28px;
+        letter-spacing: 0px;
+    }
+    .footer__sponsor {
+        position: relative;
+        left: 80px;
+        width: 45%;
+        top: 0px;    
+    }   
+    
+    .Recipes__slideshow {
+        padding-top: 64px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        height: 300px;
+        z-index: 1;
+        text-align: center;
+        margin: 0px;
+        display: flex;
+        padding-left: 5px;
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .resposive__menu {
+        margin-bottom: 30%;
+    }
+
+    .banner__text_upper{
+        font-size: 38px;
+    }
+
+    .banner__text_down {
+        font-size: 38px;
+    }
+}
+
+@media  only screen  and (max-width: 460px) {
+    .banner__text_upper{
+        top: -50px;
+    }
+
+    .banner__text_down {
+        top: -15px;
+    }
+
+    .section__divider {
+        margin-left: 35px;
+    }
+
+    .resposive__menu {
+        margin-bottom: 35%;
+    }
+
+    .footer__sponsor__title > p {
+        font-size: 20px;
+    }
+}
+
+/*
 @media  only screen  and (max-width: 1230px) {
     .Recipes__slideshow {
         width: 80%;
@@ -302,9 +642,7 @@ footer {
 }
 
 @media  only screen  and (max-width: 1170px) {
-    /* .navbar > ul {
-        width: 80%;
-    } */
+
 
     .navbar > ul > li {
         margin-left: 30px;
@@ -349,16 +687,11 @@ footer {
 }
 
 @media  only screen  and (max-width: 1000px) {
-    /* .navbar > ul {
-        width: 60%;
-    } */
-
     .navbar > ul > li {
         margin-left: 10px;
     }
 }
 
-/* TABLETAS */
 @media  only screen  and (max-width: 940px)  {
     body{
         position: relative;
@@ -411,12 +744,12 @@ footer {
         position: relative;
         text-align: right;
         display: block;
-        left: 550px;
+        left: 690px;
         top: 24px;
     }
     .banner__container {
         position: relative;
-        width: 768px;
+        width: 100%;
     }
     .section__divider {
         position: relative;
@@ -454,7 +787,7 @@ footer {
     }
 
     .banner__container > img {
-        width: 768px !important;
+        width: 100% !important;
     }
     .Recipes__slideshow{ 
         padding-top: 64px;       
@@ -482,21 +815,20 @@ footer {
     .footer__sponsor__title {
         position: relative;
         left: 40px;
-        width: 376px;
-        top: 12px;
-        text-align: left;
-        font-size: 20px;
-        letter-spacing: 0px;        
+        width: 377px;
+        top: -25px;
+        text-align: left;        
         color: var(--text-color);
     }
 
-    .footer__sponsor__title > h1 {
-        font-weight: 100 !important;
+    .footer__sponsor__title > p {
+        font-size: 56px;
+        letter-spacing: 0px;
     }
     
     .footer__sponsor {
         position: relative;
-        left: -46px;
+        left: 110px;
         width: 379px;
         top: -44px;  
     }
@@ -505,7 +837,12 @@ footer {
         width: 379px;
     }
 }
-/* MOBILES */
+
+@media only screen  and (max-width: 500px) {
+
+}
+
+
 @media only screen  and (max-width: 428px) {
     .menu__container {
         margin-bottom: 10px;
@@ -666,4 +1003,4 @@ footer {
         right: 10px;
         top: 10px;
     }
-}
+} */
